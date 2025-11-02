@@ -1,0 +1,94 @@
+/* กำหนดตัวแปรสีหลัก */
+:root {
+    --bs-primary: #bd5d38; /* สีส้มอิฐ (สีหลัก) */
+    --bs-secondary: #495057; /* สีเทาเข้ม (สีข้อความหลัก) */
+}
+
+/* การจัดรูปแบบทั่วไป */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 70px; /* ชดเชยความสูงของ Navbar แนวนอน */
+    color: var(--bs-secondary);
+    background-color: #f8f9fa; /* สีพื้นหลังอ่อนๆ */
+}
+
+/* Navbar */
+#mainNav {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--bs-primary); /* เพิ่มเส้นขอบสีหลัก */
+}
+
+/* ลิ้งค์และการเน้นสี */
+.text-primary {
+    color: var(--bs-primary) !important; 
+}
+a {
+    color: var(--bs-primary);
+    text-decoration: none;
+}
+a:hover {
+    color: #824026;
+    text-decoration: underline;
+}
+
+/* ชื่อ-นามสกุล h1 */
+h1 {
+    font-size: 4rem; 
+    line-height: 4.5rem;
+    font-weight: 700;
+}
+
+/* สาขาวิชา em */
+.text-secondary {
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* ส่วนหัวข้อ (Sections) */
+.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.resume-date span {
+    font-weight: 500;
+    color: var(--bs-primary) !important;
+}
+
+/* การจัดรูปแบบสำหรับรูปโปรไฟล์วงกลม */
+.profile-pic {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    object-fit: cover; 
+    border: 7px solid var(--bs-primary); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* ไอคอน @ แทนอีเมล์ */
+.at-sign-icon {
+    width: 15px; 
+    height: 15px;
+    vertical-align: middle;
+}
+
+/* การจัดรูปแบบรายการติดต่อ */
+.contact-list {
+    font-size: 1.1rem;
+}
+
+/* การจัดรูปแบบ Skills (Bullet Points) */
+.skill-list li {
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+    list-style: none; /* ลบ Bullet point เริ่มต้นออก */
+    font-size: 1.05rem;
+}
+
+/* การจัดรูปแบบไอคอนใน Skills เมื่อ hover */
+.skill-list i {
+    transition: transform 0.2s;
+}
+
+.skill-list li:hover i {
+    transform: scale(1.1);
+}
